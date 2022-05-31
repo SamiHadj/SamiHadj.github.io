@@ -1,0 +1,192 @@
+* {
+    background-color: rgb(30, 29, 28);
+    color: rgb(224, 223, 223);
+    font-family: 'Vollkorn', serif;
+    font-weight: bold;
+}
+/* preloader */
+.preloader html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background: #191a1a;
+    text-align: center;
+  }
+  
+.preloader  h1 {
+    margin: 0;
+    padding: 0;
+    font-family: ‘Arial Narrow’, sans-serif;
+    font-weight: 100;
+    font-size: 1.1em;
+    color: #a3e1f0;
+  }
+  
+ .preloader span {
+    position: relative;
+    top: 0.63em;  
+    display: inline-block;
+    text-transform: uppercase;  
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  
+ .preloader .let1 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.2s;
+  }
+  
+ .preloader .let2 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.3s;
+  }
+  
+ .preloader .let3 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.4s;
+  }
+  
+ .preloader .let4 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.5s;
+  
+  }
+  
+ .preloader .let5 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.6s;
+  }
+  
+ .preloader .let6 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.7s;
+  }
+  
+.preloader  .let7 {
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 1.8s;
+  }
+  
+  @keyframes drop {
+      10% {
+          opacity: 0.5;
+      }
+      20% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      80% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      90% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 0;
+          top: 6.94em
+      }
+  }
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin: 10px 20px;
+}
+
+header h1 {
+    font-family: 'Righteous', cursive;
+}
+
+header button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 0;
+    padding-bottom: 1px;
+    font-size: 20px;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+header button:hover {
+    color: grey;
+    border-bottom-color: black;
+}
+
+/* project */
+
+.project {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.project-box:hover {
+    transform: scale(1.15);
+    transition: 0.3s;
+    filter: brightness(100%);
+}
+
+.project-box {
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    height: 450px;
+    flex: 0.1;
+    margin: 10px;
+    padding: 15px;
+    filter: brightness(50%);
+}
+
+.project1{ background: url(../images/Monkey1.jpeg) 50% ;}
+.project2{ background: url(../images/Monkey2.jpeg) 50% ;}
+.project3{ background: url(../images/Monkey3.jpeg)50%;}
+.project4{ background: url(../images/Monkey4.png) 50%;}
+.project5{ background: url(../images/Monkey4\,5.png) 50%;}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 18px;
+}
+
+.freelance {
+    font-size: 19px;
+    padding: 10px;
+    line-height: 15px;
+}
+
+.available:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 1;
+    color: linear-gradient(to right, #9796f0, #fbc7D4) ;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact {
+    font-size: 18px;
+    padding: 10px;
+    line-height: 10px;
+}
+
+footer .contact p:hover {
+    color: white;
+    box-shadow: 1;
+}
+
